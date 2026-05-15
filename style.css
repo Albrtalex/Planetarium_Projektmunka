@@ -4,8 +4,98 @@
     box-sizing: content-box;
     font-family:monospace;
 }
+:root {
+    --dark-blue:#0d1f3f;
+    --black:#0a1730;
+    --light-grey:#d6deeb;
+    --secondary-text:#9fb0c8;
+    --white:#f8faff;
+}
 body {
+    background-color: var(--black);
+}
+
+header {
     background-color: var(--dark-blue);
+    width: 85%;
+    height: 68px;
+    border: 1px solid rgba(248, 250, 255, 0.5);
+    border-radius: 50px; 
+    margin: 25px auto 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+}
+
+.cim {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cim a{
+    color: var(--white); 
+    font-size:35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cim img {
+    height: 50px;
+}
+
+nav {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-right: 45px;
+}
+
+nav a{
+    padding: 2px;
+}
+
+header a{
+    text-decoration: none;
+    color: #f8faff;
+    font-size: 26px;
+    display: block;
+    position: relative;
+    font-weight: 200;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 500ms, transform 500ms;
+}
+
+header a:hover::after,
+header a:focus::after {
+    opacity: 1;
+    transform: translate3d(0,2px,0);
+}
+
+header a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+header a:hover::after,
+header a:focus::after{
+    transform: scale(1);
 }
 #cim {
     font-size: 40px;
@@ -18,22 +108,18 @@ hr {
     width: 50%;
     margin: auto;
 }
-:root {
-    --dark-blue:#0d1f3f;
-    --black:#0a1730;
-    --light-grey:#d6deeb;
-    --secondary-text:#9fb0c8;
-    --white:#f8faff;
-}
 footer {
     background-color: var(--dark-blue);
-    height: 100px;
+    height: 150px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: fixed;
     align-items: center;
+    letter-spacing: 2px;   
+    font-size: 15px; 
+    border-radius: 50px 50px 0 0;
 }
 footer h3 {
     color: var(--light-grey);
