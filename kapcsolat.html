@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kapcsolat.css">
+</head>
+<body>
+    <div id="container">
+        <div id="box1">
+            <h2>Elérhetőségek</h2>
+            <p><b>Cím:</b><br>1101 Budapest, Népliget (Hell Miksa sétány)</p>
+            <p><b>Telefonszám:</b><br>+36 1 263 1811</p>
+            <p><b>E-mail:</b><br>info@planetarium.hu</p>
+            <p><b>Nyitvatartás:</b> <br>
+                Hétfő – Péntek: 09:00 – 16:00 <br>
+                Szombat: 10:00 – 17:00 <br>
+                Vasárnap: Zárva
+            </p>
+        </div>
+        <div id="box2">
+            <h2>Kapcsolati űrlap</h2>
+            <form action="kapcsolat.php" method="post">
+                <input class="input" type="text" name="nev" id="nev" placeholder="Név"> 
+                <input class="input" type="email" name="email" id="email" placeholder="E-mail">
+                <textarea class="input" name="uzenet" id="uzenet" placeholder="Tisztelt Planetárium! &#10;Egy iskolai csoport hogyan tudna jelentkezni?"></textarea>
+                <input id="submit" type="submit" value="Küldés">
+            </form>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin: 20px 0; width: 100%;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.5332034177484!2d19.1018672!3d47.4769696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc04c2ef1c17%3A0x620b2cc8f769c736!2sTIT%20Budapesti%20Planet%C3%A1rium!5e1!3m2!1shu!2shu!4v1715800000000!5m2!1shu!2shu&maptype=satellite" 
+            width="80%" 
+            height="300" 
+            style="border:0; border-radius: 60px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>  
+</body>
+</html>
