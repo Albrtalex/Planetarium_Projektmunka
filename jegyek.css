@@ -17,7 +17,7 @@ body {
     --white:#F8FAFF;
 }
 #content {
-    width: 60%;
+    width: min(90%, 1200px);
     margin: auto;
     background-color: var(--dark-blue);
     border-radius: 40px;
@@ -34,7 +34,7 @@ button {
     height: 30px;
     border-radius: 10px;
     border: 3px solid var(--black);
-    font-size: 15px;
+    font-size: 1.1em;
 }
 .ar {
     text-align: right;
@@ -54,4 +54,7 @@ button {
 #info {
     padding: 20px;
     margin-left: 20px;
+}
+.jegy {
+    padding: 10px;
 }
