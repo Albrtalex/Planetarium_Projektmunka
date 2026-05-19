@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size:62.5%;
+}
+
+:root {
+    --dark-blue:#0d1f3f;
+    --black:#0a1730;
+    --light-grey:#d6deeb;
+    --secondary-text:#9fb0c8;
+    --white:#f8faff;
+}
+
+body{
+    background:linear-gradient(135deg, var(--dark-blue),var(--black));
+    min-height: 100vh;
+    font-size:1.6rem;
+}
+
+#container {
+    min-height: 100vh;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.opening {
+    position: relative;
+    min-height: 950px;
+    background-image: url(img/night-sky.png);
+    mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    background-size: cover; /
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opening h1{
+    color: var(--light-grey);
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.udvozlo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    bottom: 10px;
+}
+
+
+.opening a {
+    width: 300px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--white);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 2.1rem;
+    color: var(--black);
+    transition: transform 0.3s;
+}
+
+.opening a:hover {
+    transform: scale(1.05);
+}
+
+.line-container {
+    width: 85%;      
+    margin: 30px auto 80px; 
+    height: 1px;     
+}
+
+.line-container line {
+    stroke: rgba(248, 250, 255, 0.4); 
+    stroke-width: 0.08;
+    stroke-linecap: round;
+}
+
+.kiemelt h2{
+    color: var(--light-grey);
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 10px 0 130px;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+}
+
+.programok {
+    background-color: var(--dark-blue);
+    border: 1px solid rgba(248, 250, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    width: 77%;
+    display: flex;
+    height: 300px;
+    border-radius:40px;
+    margin: 0 auto 150px ;
+    overflow: hidden;
+}
+
+.programok img {
+    height: 300px;
+    border-radius:40px ;
+    border-right: 1px solid rgba(248, 250, 255, 0.2);
+}
+
+.leiras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding-bottom: 30px; 
+    color: var(--light-grey);
+}
+
+.leiras h3 {
+    padding: 30px 40px 10px; 
+    font-size: 3.5rem;
+}
+
+.leiras p:nth-of-type(1){
+    padding: 10px 40px;
+    font-size: 2.2rem;
+    max-width: 600px; 
+}
+
+.leiras a {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: auto; 
+    transition: transform 0.2s;
+}
+
+.leiras p:nth-of-type(2){
+    padding: 15px 40px 0;
+    font-size: 1.6rem;
+    color: var(--secondary-text); /
+}
+
+.leiras a {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:var(--white);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: var(--black);
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.leiras a:hover {
+    transform: scale(1.05);
+    
+}
+
+
