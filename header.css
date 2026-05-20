@@ -151,9 +151,12 @@ header a:focus::after{
     background-color: rgba(248, 250, 255, 0.1);
 }
 
-@media screen and (max-width: 1475px){
+@media screen and (max-width: 1475px) {
     .cim {
         gap: 30px;
+    }
+    nav {
+        width: 55%; 
     }
 }
 
@@ -176,12 +179,49 @@ header a:focus::after{
     }
 }
 
-@media screen and (max-width: 1000px){
-    dropdown-menu{
-        width: 30px;
+@media screen and (max-width: 1000px) {
+    header {
+        width: 90%; 
+    }
+    .dropdown-menu {
+        margin-right: 25px;
     }
     .cim {
-        margin-left:35px;
+        margin-left: 25px;
+        gap: 20px;
     }
+    .cim a {
+        font-size: 2.8rem; 
+    }
+    .cim img {
+        height: 40px; 
+    }
+}
 
+@media screen and (max-width: 500px) {
+    header {
+        width: 95%;
+        height: 60px; 
+        margin-top: 15px;
+    }
+    .cim {
+        margin-left: 15px;
+        gap: 12px;
+    }
+    .cim a {
+        font-size: 2.2rem;
+    }
+    .cim img {
+        height: 32px;
+    }
+    .dropdown-menu {
+        margin-right: 15px;
+    }
+    .dropdown-menu::after {
+        font-size: 2.4rem; 
+    }
+    .options {
+        width: 170px;
+        top: 45px; 
+    }
 }
