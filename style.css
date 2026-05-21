@@ -30,7 +30,7 @@ body{
 .opening {
     position: relative;
     min-height: 950px;
-    background-image: url(../img/night-sky.png);
+    background-image: url(media/night-sky.png);
     mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
     background-size: cover; 
     background-position: center;
