@@ -13,7 +13,7 @@
 }
 
 body{
-    background:linear-gradient(135deg, var(--dark-blue),var(--black));
+    background-color: var(--black);
     min-height: 100vh;
     display: flex;
     flex-direction:column ;
