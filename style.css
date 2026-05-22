@@ -19,7 +19,7 @@ header {
     height: 68px;
     border: 1px solid rgba(248, 250, 255, 0.5);
     border-radius: 50px; 
-    margin: 25px auto 40px;
+    margin: 25px auto 80px;
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -141,6 +141,48 @@ header a:focus::after{
     background-color: rgba(248, 250, 255, 0.1);
 }
 
+#cim {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 10px;
+}
+hr {
+    color: var(--light-grey);
+    width: 50%;
+    margin: 0 auto 100px;
+}
+:root {
+    --dark-blue:#0d1f3f;
+    --black:#0a1730;
+    --light-grey:#d6deeb;
+    --secondary-text:#9fb0c8;
+    --white:#f8faff;
+}
+footer {
+    background-color: var(--dark-blue);
+    border-radius: 25px 25px 0 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    bottom: 0;
+    align-items: center;
+    margin-top: 50px;
+}
+footer h3 {
+    color: var(--light-grey);
+    padding-bottom: 10px;
+}
+footer li {
+    color: var(--secondary-text);
+    list-style: none;
+}
+footer ul {
+    padding-left: 0;
+}
+
 @media screen and (max-width: 1475px) {
     .cim {
         gap: 30px;
@@ -214,45 +256,4 @@ header a:focus::after{
         width: 170px;
         top: 45px; 
     }
-}
-#cim {
-    font-size: 3rem;
-    color: var(--white);
-    text-align: center;
-    margin-bottom: 10px;
-}
-hr {
-    color: var(--light-grey);
-    width: 50%;
-    margin: 0 auto 50px;
-}
-:root {
-    --dark-blue:#0d1f3f;
-    --black:#0a1730;
-    --light-grey:#d6deeb;
-    --secondary-text:#9fb0c8;
-    --white:#f8faff;
-}
-footer {
-    background-color: var(--dark-blue);
-    border-radius: 25px 25px 0 0;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    bottom: 0;
-    align-items: center;
-    margin-top: auto;
-}
-footer h3 {
-    color: var(--light-grey);
-    padding-bottom: 10px;
-}
-footer li {
-    color: var(--secondary-text);
-    list-style: none;
-}
-footer ul {
-    padding-left: 0;
 }
