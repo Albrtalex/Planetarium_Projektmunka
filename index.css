@@ -160,43 +160,62 @@ body{
      border: 1px solid rgb(12, 81, 255, 0.6);
 }
 
+@media screen and (max-width:1250px) {
+    .programok {
+        width:80%;
+    }
+}
+
 @media screen and (max-width: 1090px) {
     .programok {
         flex-direction: column;
-        min-height: 500px;
-        width: 30%;
-        padding: 0;
+        height: auto;
+        width: 75%;
+        margin-bottom: 80px;
     }
 
     .programok img {
-        display: none;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-right:none ;
+        border-bottom: 1px solid rgba(248, 250, 255, 0.2);
+    }
+
+    .leiras {
+        padding: 20px 20px 40px;
     }
 
     .udvozlo h1 {
         text-align: center;
+        font-size: 3rem;
     }
 }
 
-@media screen and (max-width: 850px){
-    .programok {
-        flex-direction: column;
-        min-height: 350px;
-        width: 60%;
-        padding: 0;
-    }
-
 @media screen and (max-width: 768px){
     .programok {
-        flex-direction: column;
-        min-height: 400px;
-        width: 60%;
-        padding: 0;
+        width: 90%;
+        border-radius:24px ;
     }
 
-@media screen and (max-width: 600px){
-    .programok {
-        flex-direction: column;
-        min-height: 500px;
-        width: 60%;
-        padding: 0;
+    .programok img {
+        height: 200px;
+        border-radius:24px 24px 0 0;
     }
+
+    .kiemelt h2 {
+        font-size: 2.5rem;
+        margin-bottom: 60px;
+    }
+
+    .leiras h3 {
+        font-size: 2rem;
+        padding: 20px 10px 10px;
+    }
+
+    .programok .leiras p{
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+}
+
