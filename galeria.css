@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue:#0d1f3f;
+    --black:#0a1730;
+    --light-grey:#d6deeb;
+    --secondary-text:#9fb0c8;
+    --white:#f8faff;
+}
+
+body{
+    background:linear-gradient(135deg, var(--dark-blue),var(--black));
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column ;
+}
+
+#container {
+    flex-grow: 1;
+}
+
+.felirat {
+    margin-top: 250px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: var(--white);
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.line-container {
+    width: 45%;      
+    margin: 5px auto 80px; 
+    height: 1px;     
+}
+
+.line-container line {
+    stroke: rgba(248, 250, 255, 0.8); 
+    stroke-width: 0.2;
+    stroke-linecap: round;
+}
+
+.kepek {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    padding: 25px;
+    gap: 60px;
+}
+
+.card {
+    border: 1px solid rgba(248, 250, 255, 0.4);
+    border-radius: 30px;
+    overflow: hidden;
+    flex: 1;
+    transition: transform 0.4s ;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.kep {
+    height: 85%;
+}
+
+.kep img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cimek {
+    background-color: var(--dark-blue);
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cimek h2 {
+    color: var(--white);
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 500;
+}
+
+.row:last-of-type .kep {
+    height: 89%;
+}
+
+.row:last-of-type .cimek {
+    height: 11%;
+}
+
+.row:last-of-type {
+    width: 50%;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .felirat {
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .line-container {
+        width: 70%; 
+        margin-bottom: 40px;
+    }
+
+    .kepek {
+        width: 90%;
+        height: auto; 
+    }
+
+    .row {
+        flex-direction: column;
+        height: auto; 
+        padding: 0;
+        gap: 30px; 
+        margin-bottom: 30px;
+    }
+
+    .row:last-of-type {
+        width: 100%;
+    }
+
+    .row:last-of-type .card {
+        flex: unset; 
+    }
+
+    .card {
+        width: 100%;
+        height: 350px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kep {
+        height: 80% ;
+    }
+
+    .cimek {
+        height: 20% ;
+        padding: 10px;
+    }
+
+    .cimek h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .row:last-of-type .kep {
+        height: 89% !important;
+    }
+    
+    .row:last-of-type .cimek {
+        height: 11% !important;
+    }
+}
