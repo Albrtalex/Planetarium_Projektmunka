@@ -10,9 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh; 
     margin: 0;
-}
-html {
-  overflow-y: scroll;
+    overflow-y: scroll;
 }
 header {
     background-color: var(--dark-blue);
