@@ -160,4 +160,60 @@ body{
      border: 1px solid rgb(12, 81, 255, 0.6);
 }
 
+@media screen and (max-width: 1090px) {
+    .programok {
+        flex-direction: column;
+        min-height: 500px;
+        width: 30%;
+        padding: 0;
+    }
+
+    .programok img {
+        display: none;
+    }
+
+    .udvozlo h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .programok {
+        flex-direction: column;
+        min-height: 350px;
+        width: 60%;
+        padding: 0;
+    }
+
+    .programok img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .programok {
+        flex-direction: column;
+        min-height: 400px;
+        width: 60%;
+        padding: 0;
+    }
+
+    .programok img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .programok {
+        flex-direction: column;
+        min-height: 500px;
+        width: 60%;
+        padding: 0;
+    }
+
+    .programok img {
+        width: 100%;
+    }
+}
+
 
