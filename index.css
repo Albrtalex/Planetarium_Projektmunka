@@ -185,11 +185,6 @@ body{
         padding: 0;
     }
 
-    .programok img {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 768px){
     .programok {
         flex-direction: column;
@@ -198,11 +193,6 @@ body{
         padding: 0;
     }
 
-    .programok img {
-        width: 100%;
-    }
-}
-
 @media screen and (max-width: 600px){
     .programok {
         flex-direction: column;
@@ -210,10 +200,3 @@ body{
         width: 60%;
         padding: 0;
     }
-
-    .programok img {
-        width: 100%;
-    }
-}
-
-
