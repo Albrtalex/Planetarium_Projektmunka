@@ -64,7 +64,7 @@ header a{
     position: relative;
     font-weight: 300;
     letter-spacing: 1px;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 header a::after {
