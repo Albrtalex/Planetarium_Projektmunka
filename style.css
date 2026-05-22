@@ -224,8 +224,7 @@ header a:focus::after{
 hr {
     color: var(--light-grey);
     width: 50%;
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
 }
 :root {
     --dark-blue:#0d1f3f;
