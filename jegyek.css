@@ -22,6 +22,7 @@ body {
     margin: auto;
     background-color: var(--dark-blue);
     border-radius: 40px;
+    border-bottom: 30px;
 }
 .elem {
     display: flex;
